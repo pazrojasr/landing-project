@@ -1,0 +1,404 @@
+body,
+.top,
+.second,
+.third,
+.image-subtext,
+.fourth-text{
+    display : flex;
+    flex-direction: column;
+}
+
+header {
+  background-color: #1f2937;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+header .logo {
+  font-size: 24px;
+  color: #f9faf8;
+}
+
+header .logo img {
+  max-height: 40px;
+  /* Ajusta el tamaño de la imagen según sea necesario */
+}
+
+header nav ul {
+  font-size: 18px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+header nav li {
+  font-size: 18px;
+  margin-left: 20px;
+}
+
+header nav a {
+  font-size: 18px;
+  color: white;
+  text-decoration: none;
+}
+
+header nav a:hover {
+  color: #ddd;
+}
+
+/*main.hero*/
+
+.hero {
+  background-color: #1f2937;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.hero-content {
+  display: flex;
+  flex-direction: column;
+}
+
+.hero h1 {
+  font-weight: bolder;
+  font-size: 48px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #f9faf8;
+  margin-bottom: 10px;
+}
+
+.hero p {
+  font-size: 14px;
+  color: #a8a8a8;
+  margin-top: 0;
+}
+
+.hero img {
+  max-height: 250px;
+  padding-right: 150px;
+}
+
+/*div.secondary-hero*/
+.header,
+.first,
+.images-second,
+.fourth{
+    display: flex;
+}
+
+h1{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 36px;
+  font-weight: bolder;
+}
+
+p{
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.second-header{
+    text-align: center;
+}
+.image-subtext p{
+    width:180px;
+    text-align: center;   
+}
+
+.images-second
+{
+    margin-left: auto;
+    margin-right: auto;
+    gap:20px;
+}
+.image-subtext img{
+    height:200px;
+    border-radius: 100%;
+    border: solid #e5e7eb 5px;
+    width:200px;
+}
+
+.her {
+  background-color: #e5e7eb;
+  color: white;
+  display: flex;
+  align-items: center;
+  padding: 100px;
+  font-family: Arial, Helvetica, sans-serif;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+.her p {
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif ;
+  font-weight: lighter;
+  font-style: italic;
+  font-size: 20px;
+  color: #000000;
+  margin-top: 0;
+}
+
+footer{
+  font-family: Arial, Helvetica, sans-serif;
+  background: #1f2937;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 70px;
+  color: #F9FAF8;
+  font-size:15px;
+}
+
+/* Estilos para pantallas de 601px a 1200px de ancho */
+
+@media (max-width: 600px) {
+  body {
+    font-size: 14px;
+  }
+
+  /* Estilos específicos para dispositivos móviles */
+
+  /* Header */
+  header {
+    flex-direction: column;
+    padding: 10px;
+    text-align: center;
+  }
+
+  header .logo {
+    font-size: 20px;
+  }
+
+  header nav ul {
+    margin-top: 10px;
+  }
+
+  header nav li {
+    margin: 5px 0;
+  }
+
+  /* Hero */
+  .hero {
+    flex-direction: column;
+    padding: 10px;
+    text-align: center;
+  }
+
+  .hero h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+
+  .hero img {
+    max-height: 150px;
+    padding-right: 0;
+    margin-bottom: 20px;
+  }
+
+  /* Div.secondary-hero */
+  .header,
+  .first,
+  .images-second,
+  .fourth {
+    flex-direction: column;
+  }
+
+  .second-header {
+    text-align: center;
+  }
+
+  .image-subtext p {
+    width: auto;
+    text-align: center;
+  }
+
+  .images-second {
+    margin-left: auto;
+    margin-right: auto;
+    gap: 10px;
+  }
+
+  .image-subtext img {
+    height: 150px;
+    border-radius: 40px;
+    border: solid #e5e7eb 5px;;
+    width: 150px;
+  }
+
+  .her {
+    flex-direction: column;
+    padding: 20px;
+  }
+
+  .her p {
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: lighter;
+    font-style: italic;
+    font-size: 16px;
+    color: #000000;
+    margin-top: 0;
+  }
+
+  /* Footer */
+  footer {
+    height: auto;
+    padding: 20px;
+    text-align: center;
+  }
+}
+
+/* Estilos generales */
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* Estilos para pantallas de hasta 600px de ancho */
+
+@media (max-width: 600px) {
+  body {
+    font-size: 14px;
+  }
+
+  /* Estilos específicos para dispositivos móviles */
+
+  /* Header */
+  header {
+    flex-direction: column;
+    padding: 10px;
+    text-align: center;
+  }
+
+  header .logo {
+    font-size: 20px;
+  }
+
+  header nav ul {
+    margin-top: 10px;
+  }
+
+  header nav li {
+    margin: 5px 0;
+  }
+
+  /* Hero */
+  .hero {
+    flex-direction: column;
+    padding: 10px;
+    text-align: center;
+  }
+
+  .hero h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+
+  .hero img {
+    max-height: 150px;
+    padding-right: 0;
+    margin-bottom: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+  }
+
+  /* Div.secondary-hero */
+  .header,
+  .first,
+  .images-second,
+  .fourth {
+    flex-direction: column;
+  }
+
+  .second-header {
+    text-align: center;
+  }
+
+  .image-subtext p {
+    width: auto;
+    text-align: center;
+  }
+
+  .images-second {
+    margin-left: auto;
+    margin-right: auto;
+    gap: 10px;
+  }
+
+  .image-subtext img {
+    height: 150px;
+    border-radius: 100%;
+    border: solid #e5e7eb 5px;
+    width: 150px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .her {
+    flex-direction: column;
+    padding: 20px;
+  }
+
+  .her p {
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: lighter;
+    font-style: italic;
+    font-size: 16px;
+    color: #000000;
+    margin-top: 0;
+  }
+
+  /* Footer */
+  footer {
+    height: auto;
+    padding: 20px;
+    text-align: center;
+  }
+}
+
+/* Estilos para pantallas de 601px a 1200px de ancho */
+
+@media (min-width: 601px) and (max-width: 1200px) {
+  /* Estilos específicos para dispositivos con pantallas medianas */
+
+  /* Header */
+  header nav li {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+
+  /* Hero */
+  .hero img {
+    max-height: 200px;
+    padding-right: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+  }
+
+  /* Div.secondary-hero */
+  .image-subtext img {
+    height: 180px;
+    border-radius: 100%;
+    border: solid #e5e7eb 5px;;
+    width: 180px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
